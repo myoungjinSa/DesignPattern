@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{de0ef8db-b488-40e6-8107-d39049520589}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\0_Main">
+      <UniqueIdentifier>{45e321dc-98fa-44b7-893a-3e6c8d6b45d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\1_DesignPattern">
+      <UniqueIdentifier>{9750d44a-9001-4865-a845-8a1483c33c33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\1_DesignPattern\Observer">
+      <UniqueIdentifier>{37739b5b-d2a3-4d6f-bce3-22200ce2b2ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\1_DesignPattern\Singleton">
+      <UniqueIdentifier>{f1037d67-f689-42c2-9c74-79638711be16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\0_Main\1_ObserverContent">
+      <UniqueIdentifier>{d186df0b-2bb2-47b1-abc6-131a30bd2d31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\0_Main\2_Widget">
+      <UniqueIdentifier>{98e37b50-7252-4915-9cb6-3cb8ce1aeb75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\0_Main\0_Object">
+      <UniqueIdentifier>{b898d702-bdb6-413b-8dc4-e36a28499064}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Observer.cpp">
+      <Filter>Source\1_DesignPattern\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source\0_Main</Filter>
+    </ClCompile>
+    <ClCompile Include="World.cpp">
+      <Filter>Source\0_Main\1_ObserverContent</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Source\0_Main\0_Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Singleton.cpp">
+      <Filter>Source\1_DesignPattern\Singleton</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Observer.h">
+      <Filter>Source\1_DesignPattern\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>Source\1_DesignPattern\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="Includer.h">
+      <Filter>Source\0_Main</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectHeader.h">
+      <Filter>Source\0_Main</Filter>
+    </ClInclude>
+    <ClInclude Include="World.h">
+      <Filter>Source\0_Main\1_ObserverContent</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>Source\0_Main\0_Object</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
