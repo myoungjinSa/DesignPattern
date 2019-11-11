@@ -22,7 +22,7 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{7F2E3390-4D35-49A0-8B88-644BCF1AC156}</ProjectGuid>
     <RootNamespace>SingletonPattern</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -41,7 +41,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -125,11 +125,13 @@
   <ItemGroup>
     <ClCompile Include="DynamicObject.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="NewDynamicObject.cpp" />
     <ClCompile Include="NonDynamicObject.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DynamicObject.h" />
     <ClInclude Include="Includer.h" />
+    <ClInclude Include="NewDynamicObject.h" />
     <ClInclude Include="NonDynamicObject.h" />
     <ClInclude Include="Singleton.h" />
   </ItemGroup>

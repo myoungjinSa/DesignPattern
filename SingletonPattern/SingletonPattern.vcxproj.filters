@@ -16,6 +16,9 @@
     <Filter Include="source\1_Singleton\2_NonDynamicObject">
       <UniqueIdentifier>{c3ee3004-9f46-43ca-ae8f-3c2ef53cc97c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="source\1_Singleton\3_NewDynamicObject">
+      <UniqueIdentifier>{9d565045-999a-4537-8be0-edad0f3ed30c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -26,6 +29,9 @@
     </ClCompile>
     <ClCompile Include="NonDynamicObject.cpp">
       <Filter>source\1_Singleton\2_NonDynamicObject</Filter>
+    </ClCompile>
+    <ClCompile Include="NewDynamicObject.cpp">
+      <Filter>source\1_Singleton\3_NewDynamicObject</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -40,6 +46,9 @@
     </ClInclude>
     <ClInclude Include="NonDynamicObject.h">
       <Filter>source\1_Singleton\2_NonDynamicObject</Filter>
+    </ClInclude>
+    <ClInclude Include="NewDynamicObject.h">
+      <Filter>source\1_Singleton\3_NewDynamicObject</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

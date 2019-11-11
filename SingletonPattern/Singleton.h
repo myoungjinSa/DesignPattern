@@ -67,3 +67,31 @@ private:
 
 template<typename T>
 T CNonDynamicAllocSingleton<T>::Instance;
+
+//////////////////////////////////////////////////////////////////////////
+// C++방식의 동적할당 싱글톤
+// 따로 싱글톤의 Destroy 함수를 불러서 동적할당을 해제해야하는 번거로움이 있다. 
+// * new 로 생성된 객체이기때문에 자동으로 소멸자를 불러주지 않는다. 
+//////////////////////////////////////////////////////////////////////////
+template<typename T>
+class CNewDynamicAllocSingleton
+{
+public:
+	CNewDynamicAllocSingleton() {}
+	virtual ~CNewDynamicAllocSingleton()
+	{
+		std::cout << "~CNewDynamicAllocSingleton has been called \n";
+	}
+
+	static T* Get()
+	{
+		static T* Instance = new T;
+		return Instance;
+	}
+
+	static void Destroy()
+	{
+		T* Instance = CNewDynamicAllocSingleton::Get();
+		delete Instance;
+	}
+};
